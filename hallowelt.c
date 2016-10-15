@@ -3,5 +3,6 @@
 
 int main(int argc, char **argv){
 	
-	printf("Hallo Welt!");
+	printf("Hallo Welt!\n");
+	printf("Mein Name ist Dylan Oelkers\n");
 }
