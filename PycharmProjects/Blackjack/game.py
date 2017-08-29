@@ -1,8 +1,25 @@
+import random
+
+"""
+Class defining the cards used in gameplay. Each card 
+has both a face and a value, represented by integers.
+"""
+
+
 class Card:
 
-    def __init__(self, value, face):
-        self.value = value
+    def __init__(self, face, value):
         self.face = face
+        self.value = value
+
+    def __str__(self):
+        return "(" + str(self.face) + "," + str(self.value) + ")"
+
+"""
+Class defining the player. Each player object has a name,
+total money (int), and a hand of cards used in gameplay 
+(represented by a list of Card objects).
+"""
 
 
 class Player:
@@ -14,7 +31,6 @@ class Player:
 
     def hit(self, card):
         self.hand.append(card)
-        # INSERT LOGIC FOR TOTAL VALUE OF HAND HERE?
 
     def make_bet(self):
         while True:
@@ -32,6 +48,22 @@ class Player:
                     break
 
 
+def make_deck():
+    i = 0
+    value = 1
+    face = 0
+    deck = []
+    while i < 52:
+        if value == 14:
+            value = 1
+            face += 1
+        crd = Card(face, value)
+        deck.append(crd)
+        value += 1
+        i += 1
+
+    random.shuffle(deck)
+    return deck
 
 
 

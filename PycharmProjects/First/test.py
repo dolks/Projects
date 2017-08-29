@@ -1,10 +1,24 @@
-print "helloooo"
-var = 5
-var2 = 10
+print 'stuffses'
 
-if var + var2==12:
-    print "yis"
-elif var + var2==15:
-    print "yaaas"
+x = 3
+
+if x + 3 == 6:
+    print x,'+ 3 = 6'
 else:
-    print "nuuuu"
+    print x,' + 3 != 6'
+
+lst = [5,2,1,4]
+print lst
+
+lst.sort()
+print lst
+
+"""for num in lst:
+    print num
+"""
+dct = {'k1':10, 'k2':20, 'k3':30}
+
+for k,v in dct.iteritems():
+    print k,v
+
+print dct['k1']

@@ -1,3 +1,4 @@
+import random
 lst = [1,2,3]
 lst.append(4)
 
@@ -30,5 +31,13 @@ def make_bet(money):
 
 
 make_bet(40)
+
+
+deck = []
+#deck = make_deck()
+random.shuffle(deck)
+
+for card in deck:
+    print card
 
 
