@@ -40,4 +40,12 @@ random.shuffle(deck)
 for card in deck:
     print card
 
+lst = [1,2,3]
+
+x = lst.pop(0)
+
+print x
+
+print lst[0]
+
 
