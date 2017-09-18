@@ -15,7 +15,7 @@ except:
     print 'error stuff idk'
 
 finally:
-    print 'finally i print some shit'\
+    print 'finally i print some stuff'\
 
 
 def ask():
@@ -24,7 +24,7 @@ def ask():
             x = int(raw_input('Enter an int: '))
 
         except:
-            print 'oh no thats not an int you fuck'
+            print 'oh no thats not an int'
 
         else:
             print x**2
